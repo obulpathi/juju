@@ -1,6 +1,10 @@
 MapReduce
 =========
 
+Bootstrap
+---------
+* juju bootstrap
+
 Create master and cluster
 -------------------------
 * juju deploy hadoop master
@@ -24,3 +28,7 @@ Run MapReduce programs
 * hadoop jar /usr/local/hadoop/hadoop-2.2.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.2.0.jar wordcount /user/hadoop/input /user/hadoop/input
 * hdfs dfs -ls /user/hadoop
 * hdfs dfs -get /user/hadoop/* .
+
+Destroy Environment
+-------------------
+* juju destroy-environment local
